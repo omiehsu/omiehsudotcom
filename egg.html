@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+	margin-left:10vw;
+	margin-top: 10vh;
+	font-family: Courier New;
+}
+p.a {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+p.b {
+    font-size: 15px;
+    line-height: 1.25;
+    margin-bottom: 5px;
+    font-family: garamond;
+}
+.name {
+    font-size: 50px;
+    font-weight: 875;
+    line-height: 2;
+}
+ul {
+	list-style-type: none;
+    overflow: hidden;
+    padding-left: 5vw;
+    margin-top: -10px;
+}
+li {
+    font-size: 13px;
+    font-weight: 875;
+    line-height: 1;
+    float: left;
+    padding: 8px;
+    background-color: #f2f2f2;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+}
+li.active {
+	  background-color: white;
+}
+a:link {color: black;
+  	text-decoration: none;
+}
+
+img.nav {
+	  width: 8px;
+		margin:0;
+}
+img.body {
+		width: 10px;
+		position: fixed;
+		bottom: 15vh;
+		left: 15vw;
+}
+img.body:hover {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+img.body:hover + img.hidden{
+	opacity:1;
+}
+
+img.hidden{
+	opacity: 0;
+	width: 250px;
+	transition: opacity 1s ease-in-out;
+	position: fixed;
+	top: 50vh;
+	left: 35vw;
+}
+
+</style>
+</head>
+<body>
+
+<div class="name">Omie Hsu.</div>
+
+<ul>
+	<li> <a href="index.html">home</a></li>
+	<li> <a href="about.html">about</a></li>
+	<li> <a href="teaching.html">teaching</a></li>
+	<li> <a href="cv.html">cv</a></li>
+	<li> <a href="contact.html">contact</a></li>
+	<li> <a href="pronouns.html">pronouns:?</a></li>
+	<li> <a href="solidarities.html">solidarities</a></li>
+	<li class="active"> <a href="egg.html"><img class = "nav" src="images/easter egg.jpg"></li>
+</ul>
+
+<img class="body" src="images/easter egg.jpg" alt="easter egg">
+<img class="hidden" src="images/fun.jpg" alt="easter egg">
+
+
+
+
+</body>
+</html>
