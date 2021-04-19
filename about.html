@@ -11,21 +11,28 @@ body {
 p.a {
     font-size: 15px;
     font-weight: bold;
-    line-height: 2;
+    line-height: 1;
     margin-bottom: 5px;
-    margin-top: 40px;
 }
 p.b {
     font-size: 15px;
     line-height: 1.25;
-		margin-top: 25px;
-    margin-bottom: 25px;
+    font-family: garamond;
+}
+p.c {
+    font-size: 15px;
+    line-height: 1.25;
+		margin-left: 2em;
     font-family: garamond;
 }
 .name {
     font-size: 50px;
     font-weight: 875;
     line-height: 2;
+}
+h2 {
+	font-size: 13px;
+	font-family: Courier New;
 }
 ul {
 	list-style-type: none;
@@ -78,7 +85,38 @@ div.a{
   	transition: opacity 2s;
   }
 
-	img.nav {width: 8px;
+.eggLosAngeles{
+  	width:9px;
+  	transition: opacity 2s;
+  }
+
+.LosAngeles {
+	    font-size: 15px;
+	    line-height: 1.25;
+	    font-family: garamond;
+}
+.LosAngeles:hover ~ .LApicture {
+		 opacity: 1;
+	}
+.LosAngeles:hover + .eggLosAngeles{
+	opacity: 0;
+}
+.LApicture {
+		opacity: 0;
+		transition: opacity 2s ease-in-out;
+		position: relative;
+		bottom: 25vh;
+		left: 55vw;
+		margin-right: 4px;
+	}
+img.shoes{
+			width: 30%;
+			padding: 1em;
+			background: white;
+			border: solid;
+	}
+
+img.nav {width: 8px;
 			margin:0;
 		}
 
@@ -103,20 +141,81 @@ a, a:visited{
 		<li> <a href="egg.html"><img class = "nav" src="images/easter egg.jpg"></a></li>
 </ul>
 
-<p class="a">about</p>
 
 <div class="a">
+
+	<p class="a"><br>the foundational stuff</p><br>
 
   <img class = "bio TextWrap" src="images/main 3288.jpg"</img>
 	<img class = "egg TextWrap" src="images/easter egg.jpg" alt="easter egg">
 
-	<p class="b">This makes me feel icky, so I am procrastinating about the "about."
+		<p class="b"> <b> the aspiration of action:</b> rebuilding the world for those for
+		whom the world has not historically been built
+
+		<p class="b"> <b> the principle of action: </b> In order to honor the right
+		to be critical, one must be willing to show up.
+
+		<p class="b"> <b> the method of action:</b> What could democracy look like if we shift our models for
+		political relationships from antagonistic or agonistic ones to (critically) pedagogical ones?
+
+			<p class="c"> <b> two key notes about the method:</b>
+				<br> &ensp; 1) In asking the question, I am not making a
+				claim about the nature of democratic life; it is not a claim that
+				antagonism or agonism or conflict are <i>not</i> a dimension
+				of politics. Rather, it is a speculative and experimental
+				question asked about how we might reframe our actions in response to the acknowledgement of that conflict its effects.
+				<br> &ensp; 2) As such, I often have trouble imagining this method outside of
+				a context of solidarity or potential solidarity. Though deciding, in advance, what are/are not
+				possible points of solidirity is also exactly what I hope critical pedagogy challenges us not to do.
+				To be up front: this is a limitation of the method, but it is also a point of specification. (all this might not be incorrect,
+				but certainly is incomplete. suggestions and dialogue welcome.)
+
+<hr>
+
+	<p class="a"><br> <b> the formal and institutional stuff
+		<br><br>
+	<p class="b"> research, academic:</b> Totally not incidentally, thinking through and making a
+		case for the above is what my dissertation is about.
+
+		<p class="b"> <b> come to me for my expertise in: </b> critical pedagogy //
+			thinking about democracy // queer theory and queer of color critique
+			and those intimately related, but not historically mutually interchangeable,
+			traditions of discourse called "gender and sexuality studies," "women's studies,"
+			and "gay and lesbian studies" // critical race theory, race and ethnicity studies //
+			contemporary politics and cultural critique (though oft, but not exclusively, focused on a North American context)
+
+		<p class="b"> <b> come to me for my familiarity with:</b> Asian-American studies // science
+			and technology studies // affect theory // disability studies // postcolonial thought // critical game studies //
+			media studies with respect to 21st Century technologies that hold up contemporary public spheres // critiques of capitalism
+
+		<p class="b"> <b>certifications bestowing institutional legitimacy:</b> (en route) to a PhD in Political Science from the University of Chicago //
+			Graduate Certificate in Gender and Sexuality Studies // M.A. in Political Science from the University
+			of Chicago // B.A. in Political Science and Women's Studies from Barnard College. (To index the historical shift, I include
+			my majors. To be a part of it, Barnard now offers "Women's, Gender, and Sexuality Studies.")
+
+	<p class="b"> <b>the one thing from an "honors and awards" section I can't help but
+		feel pride about:</b> Wayne C. Booth Graduate Student Prize for Excellene in Teaching, The University of Chicago, 2017.
+
+<hr>
+<div>
+<p class="a"> some biographical stuff, <br><h2>because all knowledge is situated and comes from someone who comes from somewhere </h2> </span>
+
+	<p class="b">Having moved all over <span class="LosAngeles"> Los Angeles County </span>
+	<img class ="eggLosAngeles" src="images/easter egg.jpg" alt="easter egg">	as a child, I identify "hometown" with the San Gabriel Valley. For those somewhat familiar with Southern California,
+		it can be best described, thus: "If you hop on The 10 around the Pacific Ocean, drive East until people
+		stop speaking English."
+
+	<br><br> Currently, I live in Chicago. I came here by way of electoral and legislative work
+		that took me from Amherst to Boston to Philadelphia to Harrisburg to Cleveland
+		to Akron to Denver to Colorado Springs and then back to Philadelphia
+		before returning to school and completing my BA in New York City.
+
 	<br>
-	<br>
-	Chekhov's bio to come. =/
+	 <span class ="LApicture" style="background-color:white"> <img class="shoes" src="images/LosAngeles.png" alt="sneakers and skateboard">
+		 <br>sometimes, I find my LA showing,
+		 <br>despite my best efforts </span>
+
 </div>
-
-
 
 </body>
 </html>
