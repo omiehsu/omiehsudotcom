@@ -75,6 +75,16 @@ p.gender {
 	padding: 1em;
 	transition: opacity 1s ease-in-out;
 }
+.suit {
+	font-size: 13px;
+	line-height: 1;
+	margin-bottom: 0px;
+	font-family: garamond;
+	margin-right:0;
+	margin-left: 25vw;
+	opacity: 0;
+	transition: opacity 1.5s ease-in-out;
+}
 .name {
     font-size: 50px;
     font-weight: 875;
@@ -108,7 +118,7 @@ img.nav {width: 8px;
 }
 
 img.tldr {
-	width: 9px;
+	width: 9.5px;
 	transition: opacity 1s ease-in-out;
 }
 
@@ -128,7 +138,7 @@ p.tldr:hover ~ .jk {
 }
 
 img.bottom {
-	width: 10px;
+	width: 12px;
 	position: relative;
 	margin-left: 10vw;
 	transition: opacity 1s ease-in-out;
@@ -138,7 +148,41 @@ img.bottom:hover {
 }
 img.bottom:hover ~ .gender {
 	opacity: 1;
-	background-color: white
+	background-color: white;
+}
+img.suitegg{
+	width: 9px;
+	transition: opacity 1s ease-in-out;
+}
+img.suitegg:hover{
+	opacity: 0;
+}
+img.suitegg:hover ~ img.suitpic{
+	opacity: 1;
+	background-color: white;
+}
+img.suitegg:hover ~ .suit{
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+}
+img.suitpic{
+	background-color: white;
+	padding: .5em;
+	position: fixed;
+	top: 50%;
+	width: 145px;
+	height: 224px;
+	right: 10%;
+	border: solid;
+	font-size: 15px;
+	line-height: 1.25;
+	margin-bottom: auto;
+	margin-top: auto;
+	font-family: garamond;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	opacity: 0;
+	transition: opacity 1.8s ease-in-out;
 }
 a, a:visited{
 	color: black;
@@ -189,9 +233,12 @@ at any given moment, in any given place, with any particular people.
 	and luscious traditions of masculine-of-center, boyish dyke aesthetics meet is the thin
 	veil between legibility and illegibility. Infuriating, heartbreaking, and even hilarious
 	things happen there.
-	<br>It is worth nothing that it is only one of many places where
+		<br><img class="suitegg" src="images/easter egg.jpg" alt="easter egg">
+			<span class="suit"><br>(and sometimes, girls just wanna wear suits)</span>
+	<br><br>It is worth nothing that it is only one of many places where
 	histories of the racializations of gender, of the sexualizations of race,
 	and of a heavy dose of class politics can meet.
+	<img class="suitpic" src="images/suit.jpg" alt="omie hsu">
 <p class="b">
 Sometimes, it may be an issue of safety;
 <br>sometimes, it may be an issue of play;
