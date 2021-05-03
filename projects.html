@@ -20,8 +20,15 @@ p.b {
     line-height: 1.25;
     margin-bottom: 5px;
     font-family: garamond;
+		font-weight: normal;
 }
-
+p.c { /*performer credits*/
+    font-size: 15px;
+    line-height: 1.25;
+    margin-bottom: 5px;
+    font-family: garamond;
+		text-align: center;
+}
 .project{
 	border: solid;
 	padding: 15px;
@@ -30,20 +37,6 @@ p.b {
     font-size: 50px;
     font-weight: 875;
     line-height: 2;
-}
-.credits{
-	font-size: 15px;
-	line-height: 1.25;
-	margin-bottom: 5px;
-	font-family: garamond;
-	text-decoration: underline;
-}
-.fullcredits{
-		font-size: 15px;
-		line-height: 1.25;
-		margin-bottom: 5px;
-		font-family: garamond;
-		border: solid;
 }
 ul {
 	list-style-type: none;
@@ -67,14 +60,66 @@ li.active {
 }
 a:link {color: black;
   	text-decoration: none;}
-
 img.nav {width: 8px;
 		margin:0;
 }
-
 a, a:visited{
 	color: black;
 }
+.credits {
+	  font-size: 15px;
+	  line-height: 1.25;
+	  margin-bottom: 5px;
+	  font-family: garamond;
+		background-color: white;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: red; /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  font-size: 15px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+  font-family: garamond;
+	font-weight: normal;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 </style>
 </head>
 <body>
@@ -102,11 +147,110 @@ a, a:visited{
 		<br><b>directors:</b> Patrick Jagoda, Heidi Coleman
 		<br><b>game designers:</b> Mollie Braley, Roderick Luke Chan, Daniel Cohen, Christine Fleener, Arianna Gass, Hugh Graham, Julianne Grasso, Omie Hsu, Bill Hutchison, Daniel Lipson, Jesse Martinez, Peter McDonald, Ben Nicholson, Liam Philiben, Jordan Pruett, Sarah Saltiel, Ashlyn Sparrow, Zoe Smith, Ben Grobman, India Weston
 		<br><b>project managers:</b>  Benjamin Nicholson, Rachael Koplin, Laura Ashlock with Sarah Stark, Olivia Malone, Charlie Lovejoy, Katy Surhigh, Anna Aguilar, Roderick Luke Chan
+		<br> <b>learning objective leads:</b> Heidi Coleman, Omie Hsu
 		<br><b>installation artists:</b> Dave Carlson, Samantha Rausch
 		<br><b>set designers:</b> Ben Caracello, Jacob Mulcahy, Zach Perrault, Harrison Ornelas, Harrison Kanter
 		<br><b>puzzle designers:</b> Sandy Weisz, Christine Fleener, Xander Beberman
-		<hr>
-		<br>
+		<br><b>sound designers:</b> Connor Ciesil, Julianne Grasso, Ben Nicholson
+<br><br><button class="credits" id="myBtn"><b><u>full credits</u><b/></button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p class="b"><b>card game artists:</b> Dav Yendler, Ashlyn Sparrow
+		<br> <b>costume designer:</b> Nathan R. Rohrer
+		<br> <b> wardrobe team:</b> Meghan Graves, Janelle Manno, Alyson McCandless, Giannaula Prokopis
+		<br> <b> props designer:</b> Jenny Pinson
+		<br> <b> props technicians:</b> Arianna Gass, Mollie Braley, Roderick Luke Chan, Dan Cohen, Christine Fleener, Hugh Graham, Julianne Grasso, Omie Hsu, Bill Hutchison, Daniel Lipson, Peter McDonald, Ben Nicholson, Jordan Pruett, Sarah Saltiel, Zoe Smith, India Weston
+		<br> <b>producers</b> Corrie Besse, Heidi Coleman
+		<br> <b>research assistants:</b> Kathryn Hendricks, Addie Baron, Wyatt Bland, Summer Fields, Sydelle Keisler, Skylar Liam
+		</p>
+		<p class="c"><br> CAST
+			<br>
+			<br><b> Penny Smahls:</b> Omie Hsu
+			<br><b> Jesse Morel/Bill Gardener:</b> Bill Hutchison
+			<br><b> Arbiter:</b> Ashlyn Sparrow
+			<br><b> Ana Mead: </b> Zoe Smith
+			<br><b> India Weston: </b> India Weston
+			<br><b> Daniel Lipson:</b> Daniel Lipson
+			<br><b> Adrian De Luca/Mateo Rey:</b> Jesse Martinez
+			<br><b> Jacob Fulmer:</b> Jordan Pruett
+			<br><b> Jordan Pruett:</b> Jordan Pruett
+			<br><b> Melanie Anders: </b> Mollie Braley
+			<br><b> Christine Fleener:</b> Christine Fleener
+			<br><b> Arbitties:</b> Mollie Braley, Daniel Cohen, Christine Fleener, Arianna Gass, Katya Gozman, Hugh Graham, Peter McDonald, Ben Nicholson
+			<br><b> Parangels:</b> Ben Nicholson, Kent Lambert
+			<br><b> Engineers: </b> Jacob Mulcahy, David Carlson
+			<br><b> Rockefeller Chapel Organist:</b> Thomas Weisflog
+			<br><b> Rackefeller Chapel Carillonneur:</b> Joey Brin
+			<br><b> Marketeers:</b> Maxine Frendel, Chase Joynt, David Lovejoy, Seph Mozes, Sarah Saltiel
+			<br><b> Runners:</b> Andrew Cutler, Siri Lee, David Lovejoy, Jesse Martinez, Sarah Saltiel, Tempest Wisdom
+			<br><b> Rens:</b> Mollie Braley, Hugh Graham, India Weston, possibly Patrick Jagoda
+			<br><b> P.S. Band:</b> Run and Punch
+  </div>
+</div>
+<hr>
+	<p class="b"> <i>the parasite</i> was an Alternate Reality Game (ARG) designed
+		for the 1,781 incoming students in 2017 at the University of Chicago . While its third act, which was executed
+		during the week of orientation, constituted the most live and in-person events,
+		the duration of engagement and play spanned the summer months of 2017.
+	<p class="b"> The primary goals of the project were twofold and ran in parallel. On the one hand, we endeavored
+		to design an interactive (covertly educational) experience that developed players' capacities
+		to flourish in collegiate and twenty-first century life in terms such as: fluency in digital literacy, wills to
+		collaborative labor, and ethics of leadership (including, but not reducible to skills [as in "leadership skills"]).
+		Alongside, we also framed these method- and skills-based pedagogies within the contexts and contents
+		of problem- and question-based themes of contemporary life, like climate change, structural racism,
+		income inequality, sexual violence, and global pandemics [a theme that ... hits differently after 2020].
+	<p class="b"> This ARG was an expansive collaborative project that drew on the talents and insights
+		of a trans-, multi-, inter-, anti-disciplinary team of collaborators, which included university faculty, students in PhD, MFA, and
+		undergraduate programs of study, professional artists of many aesthetic ilks, non-professional artists of even more aesthetic ilks,
+		daring/generous administrators and probably-inclined-towards-cheekiness-or-care-or-both staff of the university,
+		many who acted in solidarity inside and outside of the University, and even a freaking carillonneur!
+	<p class="b"> For roughly four months, students discovered, engaged with, and created a whole entire world around
+		the machinations of a non-hierarchical secret society who needed their help to open a mysterious room en route to finding
+		and learning the secrets of an entity only referred to as "the parasite." Explore the archive of the game assets and the digitally
+		trackable stuff of the experience at <a href="http://whatistheparasite.com/"> <u><b>whatistheparasite.com</b></u></a>.
+	<p class="b"> Or read about the project as it was covered by <a href="https://www.wired.com/story/an-alternate-reality-game-that-takes-freshmen-orientation-to-a-new-level/"><u><i><b>Wired</b></i></u></a>,
+		<a href="https://www.chronicle.com/blogs/profhacker/playing-at-orientation-interview-with-the-designers-of-the-parasite-at-university-of-chicago"><u><i><b>The Chronicle of Higher Education</b></i></u></a>,
+		<a href="https://howlround.com/parasite"><u><i><b>HowlRound</b></i></u></a>, and
+		<a href="https://news.uchicago.edu/story/incoming-students-immersed-world-alternate-reality-game"><u><i><b>UChicago News</b></i></u></a>.
+	<p class="b"> Or watch this video overview:
+		<br><br> <iframe src="https://player.vimeo.com/video/244380816" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 
 </body>
